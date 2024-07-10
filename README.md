@@ -7,6 +7,6 @@ This code models a sports meet using a class to encapsulate the behavior and att
 To use the project clone repository.
 Run the main.py
 
-**Contributions**
+**CONTRIBUTION**
 This project is open to contribution .
 To contribute clone this repository.
