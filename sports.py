@@ -37,6 +37,15 @@ class Sports:
             self.stamina = 50
         print(f"{self.myplayer} had a {meal_type} meal. Current stamina: {self.stamina}")
 
+    def rest(self, time_period):
+        if time_period.lower() == 'short':
+            self.stamina += 10
+        elif time_period.lower() == 'long':
+            self.stamina += 25
+        if self.stamina > 50:
+            self.stamina = 50
+        print(f"{self.myplayer} took a {time_period} rest. Current stamina: {self.stamina}")
+
     def event_summary(self):
         print(f"Player: {self.myplayer}")
         print(f"Current Stamina: {self.stamina}")
