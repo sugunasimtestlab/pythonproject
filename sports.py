@@ -1,3 +1,4 @@
+
 class Sports:
     print("Welcome to the national sports meet!")
 
@@ -58,3 +59,9 @@ class Sports:
         else:
             print(f"{self.myplayer} has lost the game.")
             exit()
+    def train(self):
+        training_increase = 5
+        self.speed += training_increase
+        if self.speed > 100:
+            self.speed = 100
+            print(f"{self.myplayer} trained and increased speed! Current speed: {self.speed}")
