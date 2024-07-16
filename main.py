@@ -27,6 +27,10 @@ def main():
             meal_type = input("What type of meal? (light/heavy) ")
             my_sports.nutrition(meal_type)
 
+        user_input = input("Do you want to rest to recover stamina? (yes/no) ")  # New feature: Rest
+        if user_input.strip().lower() == 'yes':
+            my_sports.rest() 
+
     my_sports.event_summary()
 
 if __name__ == "__main__":
