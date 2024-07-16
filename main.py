@@ -7,18 +7,24 @@ def main():
         user_input = input("Do you want to play the 3000 meter level? (yes/no) ")
         if user_input.strip().lower() == 'yes':
             my_sports.level()
+        elif user_input.strip().lower() == 'status':
+            my_sports.check_status()
         else:
             break
 
         user_input = input("Do you want to play the 5000 meter level? (yes/no) ")
         if user_input.strip().lower() == 'yes':
             my_sports.district()
+        elif user_input.strip().lower() == 'status':
+            my_sports.check_status()
         else:
             break
 
         user_input = input("Do you want to play the final match? (yes/no) ")
         if user_input.strip().lower() == 'yes':
             my_sports.state()
+        elif user_input.strip().lower() == 'status':
+            my_sports.check_status()
         else:
             break
 
