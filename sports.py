@@ -58,3 +58,7 @@ class Sports:
         else:
             print(f"{self.myplayer} has lost the game.")
             exit()
+
+    def check_status(self):
+        print(f"Current Stamina: {self.stamina}")
+        print(f"Current Speed: {self.speed}")
