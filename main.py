@@ -10,11 +10,21 @@ def main():
         else:
             break
 
+        rest_input = input("Do you want to rest before the next event? (yes/no) ")
+        if rest_input.strip().lower() == 'yes':
+            time_period = input("What type of rest? (short/long) ")
+            my_sports.rest(time_period)
+
         user_input = input("Do you want to play the 5000 meter level? (yes/no) ")
         if user_input.strip().lower() == 'yes':
             my_sports.district()
         else:
             break
+
+        rest_input = input("Do you want to rest before the final match? (yes/no) ")
+        if rest_input.strip().lower() == 'yes':
+            time_period = input("What type of rest? (short/long) ")
+            my_sports.rest(time_period)
 
         user_input = input("Do you want to play the final match? (yes/no) ")
         if user_input.strip().lower() == 'yes':
